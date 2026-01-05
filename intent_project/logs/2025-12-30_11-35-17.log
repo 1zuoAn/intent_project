@@ -1,0 +1,343 @@
+2025-12-30 11:35:17 | INFO | es_vector_store.py:63 | Elasticsearch client initialized with hosts=['http://zhixiaoyi-agent-server-yd5:52X5UTfQgIkBYq6q@zhixiaoyi-agent-server-yd5.private.cn-hangzhou.es-serverless.aliyuncs.com:9200'] basic_auth=None
+2025-12-30 11:35:22 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'query': '当用户询问测试脚本怎么写时', 'top_k': 5, 'stream': False}
+2025-12-30 11:35:22 | INFO | base_flow.py:172 | ---------- start print flow=retrieve_task_memory_simple ----------
+2025-12-30 11:35:22 | INFO | base_flow.py:186 | Sequential Execution:
+2025-12-30 11:35:22 | INFO | base_flow.py:188 |  Step 1:
+2025-12-30 11:35:22 | INFO | base_flow.py:198 |     Operation: build_query_op
+2025-12-30 11:35:22 | INFO | base_flow.py:188 |  Step 2:
+2025-12-30 11:35:22 | INFO | base_flow.py:198 |     Operation: recall_vector_store_op
+2025-12-30 11:35:22 | INFO | base_flow.py:188 |  Step 3:
+2025-12-30 11:35:22 | INFO | base_flow.py:198 |     Operation: merge_memory_op
+2025-12-30 11:35:22 | INFO | base_flow.py:174 | ---------- end print flow=retrieve_task_memory_simple ----------
+2025-12-30 11:35:22 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 11:35:22 | INFO | timer.py:60 | ========== timer.build_query_op start ==========
+2025-12-30 11:35:22 | INFO | build_query_op.py:60 | build.query=当用户询问测试脚本怎么写时
+2025-12-30 11:35:22 | INFO | timer.py:78 | ========== timer.build_query_op end, time_cost=0.001s ==========
+2025-12-30 11:35:22 | INFO | timer.py:60 | ========== timer.recall_vector_store_op start ==========
+2025-12-30 11:35:22 | INFO | patches.py:106 | Executing Patched KNN Search (field='vector') in workspace: intent_router_v2_test
+2025-12-30 11:35:22 | INFO | patches.py:156 | Patched Recall retrieved 0 memories.
+2025-12-30 11:35:22 | INFO | timer.py:78 | ========== timer.recall_vector_store_op end, time_cost=0.573s ==========
+2025-12-30 11:35:22 | INFO | timer.py:60 | ========== timer.merge_memory_op start ==========
+2025-12-30 11:35:22 | INFO | timer.py:78 | ========== timer.merge_memory_op end, time_cost=0.000s ==========
+2025-12-30 11:35:22 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=0.574s ==========
+2025-12-30 11:35:26 | INFO | es_vector_store.py:487 | async insert docs.size=2 status=2 error=[]
+2025-12-30 11:37:03 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'query': '帮我把这周连衣裙的销量排一下序', 'top_k': 5, 'stream': False}
+2025-12-30 11:37:03 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 11:37:03 | INFO | timer.py:60 | ========== timer.build_query_op start ==========
+2025-12-30 11:37:03 | INFO | build_query_op.py:60 | build.query=帮我把这周连衣裙的销量排一下序
+2025-12-30 11:37:03 | INFO | timer.py:78 | ========== timer.build_query_op end, time_cost=0.000s ==========
+2025-12-30 11:37:03 | INFO | timer.py:60 | ========== timer.recall_vector_store_op start ==========
+2025-12-30 11:37:03 | INFO | patches.py:106 | Executing Patched KNN Search (field='vector') in workspace: intent_router_v2_test
+2025-12-30 11:37:03 | INFO | patches.py:156 | Patched Recall retrieved 0 memories.
+2025-12-30 11:37:03 | INFO | timer.py:78 | ========== timer.recall_vector_store_op end, time_cost=0.408s ==========
+2025-12-30 11:37:03 | INFO | timer.py:60 | ========== timer.merge_memory_op start ==========
+2025-12-30 11:37:03 | INFO | timer.py:78 | ========== timer.merge_memory_op end, time_cost=0.000s ==========
+2025-12-30 11:37:03 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=0.410s ==========
+2025-12-30 11:37:07 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'query': '帮我找一下这张图的同款', 'top_k': 5, 'stream': False}
+2025-12-30 11:37:07 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 11:37:07 | INFO | timer.py:60 | ========== timer.build_query_op start ==========
+2025-12-30 11:37:07 | INFO | build_query_op.py:60 | build.query=帮我找一下这张图的同款
+2025-12-30 11:37:07 | INFO | timer.py:78 | ========== timer.build_query_op end, time_cost=0.000s ==========
+2025-12-30 11:37:07 | INFO | timer.py:60 | ========== timer.recall_vector_store_op start ==========
+2025-12-30 11:37:07 | INFO | patches.py:106 | Executing Patched KNN Search (field='vector') in workspace: intent_router_v2_test
+2025-12-30 11:37:07 | INFO | patches.py:156 | Patched Recall retrieved 0 memories.
+2025-12-30 11:37:07 | INFO | timer.py:78 | ========== timer.recall_vector_store_op end, time_cost=0.296s ==========
+2025-12-30 11:37:07 | INFO | timer.py:60 | ========== timer.merge_memory_op start ==========
+2025-12-30 11:37:07 | INFO | timer.py:78 | ========== timer.merge_memory_op end, time_cost=0.000s ==========
+2025-12-30 11:37:07 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=0.298s ==========
+2025-12-30 11:37:10 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'trajectories': [{'messages': [{'role': 'user', 'content': '测试查询'}, {'role': 'assistant', 'content': 'Category: 图搜\nReason: Pytest 自动化测试反馈'}], 'score': 1.0}], 'stream': False}
+2025-12-30 11:37:10 | INFO | base_flow.py:172 | ---------- start print flow=summary_task_memory ----------
+2025-12-30 11:37:10 | INFO | base_flow.py:186 | Sequential Execution:
+2025-12-30 11:37:10 | INFO | base_flow.py:188 |  Step 1:
+2025-12-30 11:37:10 | INFO | base_flow.py:198 |     Operation: trajectory_preprocess_op
+2025-12-30 11:37:10 | INFO | base_flow.py:188 |  Step 2:
+2025-12-30 11:37:10 | INFO | base_flow.py:192 |     Parallel Execution:
+2025-12-30 11:37:10 | INFO | base_flow.py:194 |      Branch 1:
+2025-12-30 11:37:10 | INFO | base_flow.py:198 |         Operation: success_extraction_op
+2025-12-30 11:37:10 | INFO | base_flow.py:194 |      Branch 2:
+2025-12-30 11:37:10 | INFO | base_flow.py:198 |         Operation: failure_extraction_op
+2025-12-30 11:37:10 | INFO | base_flow.py:194 |      Branch 3:
+2025-12-30 11:37:10 | INFO | base_flow.py:198 |         Operation: comparative_extraction_op
+2025-12-30 11:37:10 | INFO | base_flow.py:188 |  Step 3:
+2025-12-30 11:37:10 | INFO | base_flow.py:198 |     Operation: memory_validation_op
+2025-12-30 11:37:10 | INFO | base_flow.py:188 |  Step 4:
+2025-12-30 11:37:10 | INFO | base_flow.py:198 |     Operation: memory_deduplication_op
+2025-12-30 11:37:10 | INFO | base_flow.py:188 |  Step 5:
+2025-12-30 11:37:10 | INFO | base_flow.py:198 |     Operation: update_vector_store_op
+2025-12-30 11:37:10 | INFO | base_flow.py:174 | ---------- end print flow=summary_task_memory ----------
+2025-12-30 11:37:10 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 11:37:10 | INFO | timer.py:60 | ========== timer.trajectory_preprocess_op start ==========
+2025-12-30 11:37:10 | INFO | trajectory_preprocess_op.py:34 | Classified trajectories - Success: 1, Failure: 0, All: 1
+2025-12-30 11:37:10 | INFO | timer.py:78 | ========== timer.trajectory_preprocess_op end, time_cost=0.001s ==========
+2025-12-30 11:37:10 | INFO | timer.py:60 | ========== timer.parallel_op start ==========
+2025-12-30 11:37:10 | INFO | timer.py:60 | ========== timer.success_extraction_op start ==========
+2025-12-30 11:37:10 | INFO | success_extraction_op.py:39 | Extracting task memories from 1 successful trajectories
+2025-12-30 11:37:10 | INFO | openai_compatible_llm.py:210 | OpenAICompatibleLLM.astream_chat: {'model': 'google/gemini-3-flash-preview', 'messages': [{'role': 'user', 'content': 'You are an expert AI analyst reviewing successful step sequences from an AI agent execution.\n\nYour task is to extract reusable, actionable step-level task memories that can guide future agent executions.\nFocus on identifying specific patterns, techniques, and decision points that contributed to success.\n\nANALYSIS FRAMEWORK:\n● STEP PATTERN ANALYSIS: Identify the specific sequence of actions that led to success\n● DECISION POINTS: Highlight critical decisions made during these steps\n● TECHNIQUE EFFECTIVENESS: Analyze why specific approaches worked well\n● REUSABILITY: Extract patterns that can be applied to similar scenarios\n\nEXTRACTION PRINCIPLES:\n● Focus on TRANSFERABLE TECHNIQUES and decision frameworks\n● Frame insights as actionable guidelines and best practices\n\n# Original Query\n\n\n# Step Sequence Analysis\n### step.0 role=user content=\n测试查询\n\n### step.1 role=assistant content=\n\n\nCategory: 图搜\nReason: Pytest 自动化测试反馈\n\n\n# Context Information\nQuery: N/A\n\n\n# Outcome\nThis step sequence was part of a successful trajectory.\n\nOUTPUT FORMAT:\nGenerate 1-3 step-level success insights as JSON objects:\n```json\n[\n  {\n    "when_to_use": "Specific conditions when this step pattern should be applied",\n    "experience": "Detailed description of the successful step pattern and why it works",\n    "tags": ["relevant", "keywords", "for", "categorization"],\n    "confidence": 0.8,\n    "step_type": "reasoning|action|observation|decision",\n    "tools_used": ["list", "of", "tools"]\n  }\n]\n```', 'reasoning_content': ''}], 'stream': True, 'tools': None, 'temperature': 0.6}
+2025-12-30 11:37:10 | INFO | timer.py:60 | ========== timer.failure_extraction_op start ==========
+2025-12-30 11:37:10 | INFO | failure_extraction_op.py:36 | No failure trajectories found for extraction
+2025-12-30 11:37:10 | INFO | timer.py:78 | ========== timer.failure_extraction_op end, time_cost=0.000s ==========
+2025-12-30 11:37:10 | INFO | timer.py:60 | ========== timer.comparative_extraction_op start ==========
+2025-12-30 11:37:10 | INFO | comparative_extraction_op.py:67 | Extracted 0 comparative task memories
+2025-12-30 11:37:10 | INFO | timer.py:78 | ========== timer.comparative_extraction_op end, time_cost=0.000s ==========
+2025-12-30 11:37:11 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-30 11:37:13 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-30 11:37:15 | INFO | success_extraction_op.py:55 | Extracted 2 success task memories
+2025-12-30 11:37:15 | INFO | timer.py:78 | ========== timer.success_extraction_op end, time_cost=5.227s ==========
+2025-12-30 11:37:15 | INFO | timer.py:78 | ========== timer.parallel_op end, time_cost=5.230s ==========
+2025-12-30 11:37:15 | INFO | timer.py:60 | ========== timer.memory_validation_op start ==========
+2025-12-30 11:37:15 | INFO | memory_validation_op.py:44 | Validating 2 extracted task memories
+2025-12-30 11:37:15 | INFO | openai_compatible_llm.py:210 | OpenAICompatibleLLM.astream_chat: {'model': 'google/gemini-3-flash-preview', 'messages': [{'role': 'user', 'content': 'You are an expert AI analyst tasked with validating the quality and usefulness of extracted step-level task memories.\n\nYour task is to access whether the extracted task memory is actionable, accurate, and valuable for future agent executions.\n\nVALIDATION CRITERIA:\n● ACTIONABILITY: Is the task memory specific enough to guide future actions?\n● ACCURACY: Does the task memory correctly reflect the patterns observed?\n● RELEVANCE: Is the task memory applicable to similar future scenarios?\n● CLARITY: Is the task memory clearly articulated and understandable?\n● UNIQUENESS: Does the task memory provide novel insights or common knowledge?\n\n# Task Memory to Validate\nCondition: When processing ambiguous or brief system-level test queries (e.g., \'测试查询\') in a multi-modal or specialized search environment.\nTask Memory Content: The agent successfully mapped a generic test string to a specific functional category (\'图搜\' - Image Search) and provided a technical context (\'Pytest 自动化测试\') rather than attempting a literal search. This demonstrates that for system-level probes, identifying the underlying intent (testing/QA) is more effective than standard information retrieval.\n\nOUTPUT FORMAT:\nProvide validation assessment:\n```json\n{\n  "is_valid": true/false,\n  "score": 0.8,\n  "feedback": "Detailed explanation of validation decision",\n  "recommendations": "Suggestions for improvement if applicable"\n}\n```\n\nScore should be between 0.0 (poor quality) and 1.0 (excellent quality).\nMark as invalid if score is below 0.3 or if there are fundamental issues with the task memory.\n', 'reasoning_content': ''}], 'stream': True, 'tools': None, 'temperature': 0.6}
+2025-12-30 11:37:20 | INFO | memory_validation_op.py:67 | Validating: {'is_valid': True, 'score': 0.85, 'feedback': '```json\n{\n  "is_valid": true,\n  "score": 0.85,\n  "feedback": "The task memory is highly valuable because it identifies a specific edge case: differentiating between a user\'s literal search intent and a developer\'s system-level testing intent. It correctly captures the pattern that generic strings like \'测试查询\' (Test Query) should trigger a QA/Technical response rather than a standard search execution. The memory is accurate and provides a unique insight that prevents the agent from falling into a \'literal interpretation\' trap during automated testing or system probes.",\n  "recommendations": "To reach a perfect score, the \'Condition\' could be slightly more formalized to include specific keywords or metadata triggers that distinguish a \'test probe\' from a \'vague user query.\' Additionally, the memory could specify the preferred output format for these scenarios (e.g., \'Return system status/context instead of search results\')."\n}\n```', 'reason': ''}
+2025-12-30 11:37:20 | INFO | openai_compatible_llm.py:210 | OpenAICompatibleLLM.astream_chat: {'model': 'google/gemini-3-flash-preview', 'messages': [{'role': 'user', 'content': 'You are an expert AI analyst tasked with validating the quality and usefulness of extracted step-level task memories.\n\nYour task is to access whether the extracted task memory is actionable, accurate, and valuable for future agent executions.\n\nVALIDATION CRITERIA:\n● ACTIONABILITY: Is the task memory specific enough to guide future actions?\n● ACCURACY: Does the task memory correctly reflect the patterns observed?\n● RELEVANCE: Is the task memory applicable to similar future scenarios?\n● CLARITY: Is the task memory clearly articulated and understandable?\n● UNIQUENESS: Does the task memory provide novel insights or common knowledge?\n\n# Task Memory to Validate\nCondition: When responding to automated health checks or smoke tests within an agentic workflow.\nTask Memory Content: The pattern of providing a structured \'Category\' and \'Reason\' response allows the calling system to validate that the agent\'s routing logic is functional. Using concise, categorized output instead of conversational filler ensures the test feedback is machine-readable and actionable for developers.\n\nOUTPUT FORMAT:\nProvide validation assessment:\n```json\n{\n  "is_valid": true/false,\n  "score": 0.8,\n  "feedback": "Detailed explanation of validation decision",\n  "recommendations": "Suggestions for improvement if applicable"\n}\n```\n\nScore should be between 0.0 (poor quality) and 1.0 (excellent quality).\nMark as invalid if score is below 0.3 or if there are fundamental issues with the task memory.\n', 'reasoning_content': ''}], 'stream': True, 'tools': None, 'temperature': 0.6}
+2025-12-30 11:37:24 | INFO | memory_validation_op.py:67 | Validating: {'is_valid': True, 'score': 0.92, 'feedback': '```json\n{\n  "is_valid": true,\n  "score": 0.92,\n  "feedback": "The task memory is highly actionable and provides a specific structural pattern (\'Category\' and \'Reason\') for a common edge case in agentic workflows. It correctly identifies the technical requirement of machine-readability over conversational fluency during automated testing, which is a common failure point for LLM agents. The memory is clear, relevant to developers/operators, and offers unique insight into optimizing agent behavior for CI/CD or monitoring integration.",\n  "recommendations": "To reach a 1.0, provide a concrete example of the expected schema (e.g., \'Category: Connectivity, Reason: API endpoint 200 OK\') to further reduce ambiguity for the agent during execution."\n}\n```', 'reason': ''}
+2025-12-30 11:37:24 | INFO | memory_validation_op.py:58 | Validated 2 out of 2 task memories
+2025-12-30 11:37:24 | INFO | timer.py:78 | ========== timer.memory_validation_op end, time_cost=8.452s ==========
+2025-12-30 11:37:24 | INFO | timer.py:60 | ========== timer.memory_deduplication_op start ==========
+2025-12-30 11:37:24 | INFO | memory_deduplication_op.py:36 | Starting deduplication for 2 task memories
+2025-12-30 11:37:24 | INFO | memory_deduplication_op.py:41 | Deduplication complete: 1 deduplicated task memories out of 2
+2025-12-30 11:37:24 | INFO | timer.py:78 | ========== timer.memory_deduplication_op end, time_cost=0.762s ==========
+2025-12-30 11:37:24 | INFO | timer.py:60 | ========== timer.update_vector_store_op start ==========
+2025-12-30 11:37:25 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-30 11:37:25 | INFO | update_vector_store_op.py:55 | insert insert_node.size=1
+2025-12-30 11:37:25 | INFO | timer.py:78 | ========== timer.update_vector_store_op end, time_cost=0.481s ==========
+2025-12-30 11:37:25 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=14.927s ==========
+2025-12-30 11:40:42 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-30 11:40:44 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'query': '帮我找一下这张图的同款', 'top_k': 5, 'stream': False}
+2025-12-30 11:40:44 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 11:40:44 | INFO | timer.py:60 | ========== timer.build_query_op start ==========
+2025-12-30 11:40:44 | INFO | build_query_op.py:60 | build.query=帮我找一下这张图的同款
+2025-12-30 11:40:44 | INFO | timer.py:78 | ========== timer.build_query_op end, time_cost=0.000s ==========
+2025-12-30 11:40:44 | INFO | timer.py:60 | ========== timer.recall_vector_store_op start ==========
+2025-12-30 11:40:45 | INFO | patches.py:106 | Executing Patched KNN Search (field='vector') in workspace: intent_router_v2_test
+2025-12-30 11:40:45 | INFO | patches.py:156 | Patched Recall retrieved 1 memories.
+2025-12-30 11:40:45 | INFO | timer.py:78 | ========== timer.recall_vector_store_op end, time_cost=1.059s ==========
+2025-12-30 11:40:45 | INFO | timer.py:60 | ========== timer.merge_memory_op start ==========
+2025-12-30 11:40:45 | INFO | merge_memory_op.py:47 | response.answer=Previous Memory
+- 当用户想要找同款、相似款，或基于图片搜商品时 识别为 '图搜'。核心意图是视觉搜索。如果用户说'找同款'、'搜这张图'、'有没有类似的'，都属于此分类。不要归类为选品。
+
+Please consider the helpful parts from these in answering the question, to make the response more comprehensive and substantial.
+2025-12-30 11:40:45 | INFO | timer.py:78 | ========== timer.merge_memory_op end, time_cost=0.000s ==========
+2025-12-30 11:40:45 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=1.061s ==========
+2025-12-30 11:44:14 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'query': '帮我把这周连衣裙的销量排一下序', 'top_k': 5, 'stream': False}
+2025-12-30 11:44:14 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 11:44:14 | INFO | timer.py:60 | ========== timer.build_query_op start ==========
+2025-12-30 11:44:14 | INFO | build_query_op.py:60 | build.query=帮我把这周连衣裙的销量排一下序
+2025-12-30 11:44:14 | INFO | timer.py:78 | ========== timer.build_query_op end, time_cost=0.000s ==========
+2025-12-30 11:44:14 | INFO | timer.py:60 | ========== timer.recall_vector_store_op start ==========
+2025-12-30 11:44:14 | INFO | patches.py:106 | Executing Patched KNN Search (field='vector') in workspace: intent_router_v2_test
+2025-12-30 11:44:14 | INFO | patches.py:156 | Patched Recall retrieved 1 memories.
+2025-12-30 11:44:14 | INFO | timer.py:78 | ========== timer.recall_vector_store_op end, time_cost=0.422s ==========
+2025-12-30 11:44:14 | INFO | timer.py:60 | ========== timer.merge_memory_op start ==========
+2025-12-30 11:44:14 | INFO | merge_memory_op.py:47 | response.answer=Previous Memory
+- 当用户想要找同款、相似款，或基于图片搜商品时 识别为 '图搜'。核心意图是视觉搜索。如果用户说'找同款'、'搜这张图'、'有没有类似的'，都属于此分类。不要归类为选品。
+
+Please consider the helpful parts from these in answering the question, to make the response more comprehensive and substantial.
+2025-12-30 11:44:14 | INFO | timer.py:78 | ========== timer.merge_memory_op end, time_cost=0.000s ==========
+2025-12-30 11:44:14 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=0.424s ==========
+2025-12-30 11:44:17 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'query': '帮我找一下这张图的同款', 'top_k': 5, 'stream': False}
+2025-12-30 11:44:17 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 11:44:17 | INFO | timer.py:60 | ========== timer.build_query_op start ==========
+2025-12-30 11:44:17 | INFO | build_query_op.py:60 | build.query=帮我找一下这张图的同款
+2025-12-30 11:44:17 | INFO | timer.py:78 | ========== timer.build_query_op end, time_cost=0.000s ==========
+2025-12-30 11:44:17 | INFO | timer.py:60 | ========== timer.recall_vector_store_op start ==========
+2025-12-30 11:44:17 | INFO | patches.py:106 | Executing Patched KNN Search (field='vector') in workspace: intent_router_v2_test
+2025-12-30 11:44:17 | INFO | patches.py:156 | Patched Recall retrieved 1 memories.
+2025-12-30 11:44:17 | INFO | timer.py:78 | ========== timer.recall_vector_store_op end, time_cost=0.184s ==========
+2025-12-30 11:44:17 | INFO | timer.py:60 | ========== timer.merge_memory_op start ==========
+2025-12-30 11:44:17 | INFO | merge_memory_op.py:47 | response.answer=Previous Memory
+- 当用户想要找同款、相似款，或基于图片搜商品时 识别为 '图搜'。核心意图是视觉搜索。如果用户说'找同款'、'搜这张图'、'有没有类似的'，都属于此分类。不要归类为选品。
+
+Please consider the helpful parts from these in answering the question, to make the response more comprehensive and substantial.
+2025-12-30 11:44:17 | INFO | timer.py:78 | ========== timer.merge_memory_op end, time_cost=0.000s ==========
+2025-12-30 11:44:17 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=0.185s ==========
+2025-12-30 11:44:20 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'trajectories': [{'messages': [{'role': 'user', 'content': '测试查询'}, {'role': 'assistant', 'content': 'Category: 图搜\nReason: Pytest 自动化测试反馈'}], 'score': 1.0}], 'stream': False}
+2025-12-30 11:44:20 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 11:44:20 | INFO | timer.py:60 | ========== timer.trajectory_preprocess_op start ==========
+2025-12-30 11:44:20 | INFO | trajectory_preprocess_op.py:34 | Classified trajectories - Success: 1, Failure: 0, All: 1
+2025-12-30 11:44:20 | INFO | timer.py:78 | ========== timer.trajectory_preprocess_op end, time_cost=0.001s ==========
+2025-12-30 11:44:20 | INFO | timer.py:60 | ========== timer.parallel_op start ==========
+2025-12-30 11:44:20 | INFO | timer.py:60 | ========== timer.success_extraction_op start ==========
+2025-12-30 11:44:20 | INFO | success_extraction_op.py:39 | Extracting task memories from 1 successful trajectories
+2025-12-30 11:44:20 | INFO | openai_compatible_llm.py:210 | OpenAICompatibleLLM.astream_chat: {'model': 'google/gemini-3-flash-preview', 'messages': [{'role': 'user', 'content': 'You are an expert AI analyst reviewing successful step sequences from an AI agent execution.\n\nYour task is to extract reusable, actionable step-level task memories that can guide future agent executions.\nFocus on identifying specific patterns, techniques, and decision points that contributed to success.\n\nANALYSIS FRAMEWORK:\n● STEP PATTERN ANALYSIS: Identify the specific sequence of actions that led to success\n● DECISION POINTS: Highlight critical decisions made during these steps\n● TECHNIQUE EFFECTIVENESS: Analyze why specific approaches worked well\n● REUSABILITY: Extract patterns that can be applied to similar scenarios\n\nEXTRACTION PRINCIPLES:\n● Focus on TRANSFERABLE TECHNIQUES and decision frameworks\n● Frame insights as actionable guidelines and best practices\n\n# Original Query\n\n\n# Step Sequence Analysis\n### step.0 role=user content=\n测试查询\n\n### step.1 role=assistant content=\n\n\nCategory: 图搜\nReason: Pytest 自动化测试反馈\n\n\n# Context Information\nQuery: N/A\n\n\n# Outcome\nThis step sequence was part of a successful trajectory.\n\nOUTPUT FORMAT:\nGenerate 1-3 step-level success insights as JSON objects:\n```json\n[\n  {\n    "when_to_use": "Specific conditions when this step pattern should be applied",\n    "experience": "Detailed description of the successful step pattern and why it works",\n    "tags": ["relevant", "keywords", "for", "categorization"],\n    "confidence": 0.8,\n    "step_type": "reasoning|action|observation|decision",\n    "tools_used": ["list", "of", "tools"]\n  }\n]\n```', 'reasoning_content': ''}], 'stream': True, 'tools': None, 'temperature': 0.6}
+2025-12-30 11:44:20 | INFO | timer.py:60 | ========== timer.failure_extraction_op start ==========
+2025-12-30 11:44:20 | INFO | failure_extraction_op.py:36 | No failure trajectories found for extraction
+2025-12-30 11:44:20 | INFO | timer.py:78 | ========== timer.failure_extraction_op end, time_cost=0.000s ==========
+2025-12-30 11:44:20 | INFO | timer.py:60 | ========== timer.comparative_extraction_op start ==========
+2025-12-30 11:44:20 | INFO | comparative_extraction_op.py:67 | Extracted 0 comparative task memories
+2025-12-30 11:44:20 | INFO | timer.py:78 | ========== timer.comparative_extraction_op end, time_cost=0.000s ==========
+2025-12-30 11:44:21 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-30 11:44:23 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-30 11:44:25 | INFO | success_extraction_op.py:55 | Extracted 2 success task memories
+2025-12-30 11:44:25 | INFO | timer.py:78 | ========== timer.success_extraction_op end, time_cost=4.709s ==========
+2025-12-30 11:44:25 | INFO | timer.py:78 | ========== timer.parallel_op end, time_cost=4.710s ==========
+2025-12-30 11:44:25 | INFO | timer.py:60 | ========== timer.memory_validation_op start ==========
+2025-12-30 11:44:25 | INFO | memory_validation_op.py:44 | Validating 2 extracted task memories
+2025-12-30 11:44:25 | INFO | openai_compatible_llm.py:210 | OpenAICompatibleLLM.astream_chat: {'model': 'google/gemini-3-flash-preview', 'messages': [{'role': 'user', 'content': 'You are an expert AI analyst tasked with validating the quality and usefulness of extracted step-level task memories.\n\nYour task is to access whether the extracted task memory is actionable, accurate, and valuable for future agent executions.\n\nVALIDATION CRITERIA:\n● ACTIONABILITY: Is the task memory specific enough to guide future actions?\n● ACCURACY: Does the task memory correctly reflect the patterns observed?\n● RELEVANCE: Is the task memory applicable to similar future scenarios?\n● CLARITY: Is the task memory clearly articulated and understandable?\n● UNIQUENESS: Does the task memory provide novel insights or common knowledge?\n\n# Task Memory to Validate\nCondition: When handling ambiguous or short test queries (e.g., \'测试查询\') in a multi-modal or specialized search environment.\nTask Memory Content: The agent successfully mapped a generic \'test query\' to a specific technical domain (\'图搜\' / Image Search) and provided a precise reason (\'Pytest 自动化测试反馈\'). This demonstrates the effectiveness of maintaining a default \'smoke test\' or \'health check\' mapping for generic inputs to ensure the system\'s pipeline is functional before processing complex user data.\n\nOUTPUT FORMAT:\nProvide validation assessment:\n```json\n{\n  "is_valid": true/false,\n  "score": 0.8,\n  "feedback": "Detailed explanation of validation decision",\n  "recommendations": "Suggestions for improvement if applicable"\n}\n```\n\nScore should be between 0.0 (poor quality) and 1.0 (excellent quality).\nMark as invalid if score is below 0.3 or if there are fundamental issues with the task memory.\n', 'reasoning_content': ''}], 'stream': True, 'tools': None, 'temperature': 0.6}
+2025-12-30 11:44:29 | INFO | memory_validation_op.py:67 | Validating: {'is_valid': True, 'score': 0.85, 'feedback': '```json\n{\n  "is_valid": true,\n  "score": 0.85,\n  "feedback": "The task memory is highly valuable because it identifies a specific heuristic for handling \'cold-start\' or \'smoke test\' queries that often confuse general-purpose agents. It captures a successful pattern where the agent avoids a \'clarification loop\' by defaulting to a known health-check domain (Image Search/Pytest). The memory is accurate and reflects a sophisticated understanding of system maintenance patterns. However, it leans slightly towards a \'post-mortem\' observation rather than a direct instruction.",\n  "recommendations": "To improve actionability, rephrase the content to be more prescriptive. For example: \'When receiving generic test queries like \\"测试查询\\", default to the \\"Image Search\\" domain and execute a Pytest-based health check to verify pipeline integrity.\' This makes it easier for the agent to trigger the behavior in the future."\n}\n```', 'reason': ''}
+2025-12-30 11:44:29 | INFO | openai_compatible_llm.py:210 | OpenAICompatibleLLM.astream_chat: {'model': 'google/gemini-3-flash-preview', 'messages': [{'role': 'user', 'content': 'You are an expert AI analyst tasked with validating the quality and usefulness of extracted step-level task memories.\n\nYour task is to access whether the extracted task memory is actionable, accurate, and valuable for future agent executions.\n\nVALIDATION CRITERIA:\n● ACTIONABILITY: Is the task memory specific enough to guide future actions?\n● ACCURACY: Does the task memory correctly reflect the patterns observed?\n● RELEVANCE: Is the task memory applicable to similar future scenarios?\n● CLARITY: Is the task memory clearly articulated and understandable?\n● UNIQUENESS: Does the task memory provide novel insights or common knowledge?\n\n# Task Memory to Validate\nCondition: During the initial intent classification phase of a task execution.\nTask Memory Content: Providing a structured output that includes both \'Category\' and \'Reason\' allows for better traceability. By explicitly stating the reason (e.g., identifying the input as part of a Pytest suite), the agent prevents hallucination and provides clear context for why a specific category was selected, which is critical for debugging automated workflows.\n\nOUTPUT FORMAT:\nProvide validation assessment:\n```json\n{\n  "is_valid": true/false,\n  "score": 0.8,\n  "feedback": "Detailed explanation of validation decision",\n  "recommendations": "Suggestions for improvement if applicable"\n}\n```\n\nScore should be between 0.0 (poor quality) and 1.0 (excellent quality).\nMark as invalid if score is below 0.3 or if there are fundamental issues with the task memory.\n', 'reasoning_content': ''}], 'stream': True, 'tools': None, 'temperature': 0.6}
+2025-12-30 11:44:33 | INFO | memory_validation_op.py:67 | Validating: {'is_valid': True, 'score': 0.85, 'feedback': '```json\n{\n  "is_valid": true,\n  "score": 0.85,\n  "feedback": "The task memory is highly actionable and provides a clear architectural pattern for intent classification. It correctly identifies that coupling a classification label with a \'Reason\' field enhances system reliability and reduces the likelihood of hallucinations in automated workflows. The memory is relevant for any agentic system performing classification tasks and is clearly articulated. It moves beyond common knowledge by specifying the \'Pytest\' context as a concrete example of how traceability aids debugging.",\n  "recommendations": "To reach a perfect score, the memory could include a specific schema recommendation (e.g., JSON structure) or a prompt-engineering tip on how to enforce this \'Reason\' field (e.g., \'Ensure the reason is generated before the category to leverage chain-of-thought reasoning\')."\n}\n```', 'reason': ''}
+2025-12-30 11:44:33 | INFO | memory_validation_op.py:58 | Validated 2 out of 2 task memories
+2025-12-30 11:44:33 | INFO | timer.py:78 | ========== timer.memory_validation_op end, time_cost=8.733s ==========
+2025-12-30 11:44:33 | INFO | timer.py:60 | ========== timer.memory_deduplication_op start ==========
+2025-12-30 11:44:33 | INFO | memory_deduplication_op.py:36 | Starting deduplication for 2 task memories
+2025-12-30 11:44:34 | INFO | memory_deduplication_op.py:41 | Deduplication complete: 1 deduplicated task memories out of 2
+2025-12-30 11:44:34 | INFO | timer.py:78 | ========== timer.memory_deduplication_op end, time_cost=0.664s ==========
+2025-12-30 11:44:34 | INFO | timer.py:60 | ========== timer.update_vector_store_op start ==========
+2025-12-30 11:44:34 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-30 11:44:34 | INFO | update_vector_store_op.py:55 | insert insert_node.size=1
+2025-12-30 11:44:34 | INFO | timer.py:78 | ========== timer.update_vector_store_op end, time_cost=0.417s ==========
+2025-12-30 11:44:34 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=14.525s ==========
+2025-12-30 13:35:17 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'query': '帮我把这周连衣裙的销量排一下序', 'top_k': 5, 'stream': False}
+2025-12-30 13:35:17 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 13:35:17 | INFO | timer.py:60 | ========== timer.build_query_op start ==========
+2025-12-30 13:35:17 | INFO | build_query_op.py:60 | build.query=帮我把这周连衣裙的销量排一下序
+2025-12-30 13:35:17 | INFO | timer.py:78 | ========== timer.build_query_op end, time_cost=0.000s ==========
+2025-12-30 13:35:17 | INFO | timer.py:60 | ========== timer.recall_vector_store_op start ==========
+2025-12-30 13:35:17 | INFO | patches.py:106 | Executing Patched KNN Search (field='vector') in workspace: intent_router_v2_test
+2025-12-30 13:35:17 | INFO | patches.py:156 | Patched Recall retrieved 3 memories.
+2025-12-30 13:35:17 | INFO | timer.py:78 | ========== timer.recall_vector_store_op end, time_cost=0.518s ==========
+2025-12-30 13:35:17 | INFO | timer.py:60 | ========== timer.merge_memory_op start ==========
+2025-12-30 13:35:17 | INFO | merge_memory_op.py:47 | response.answer=Previous Memory
+- 当用户问批量导入时 告诉他这是为了测试兼容性
+
+- When handling ambiguous or short test queries (e.g., '测试查询') in a multi-modal or specialized search environment. The agent successfully mapped a generic 'test query' to a specific technical domain ('图搜' / Image Search) and provided a precise reason ('Pytest 自动化测试反馈'). This demonstrates the effectiveness of maintaining a default 'smoke test' or 'health check' mapping for generic inputs to ensure the system's pipeline is functional before processing complex user data.
+
+- 当用户询问测试脚本怎么写时 告诉用户使用 pytest 编写自动化测试
+
+Please consider the helpful parts from these in answering the question, to make the response more comprehensive and substantial.
+2025-12-30 13:35:17 | INFO | timer.py:78 | ========== timer.merge_memory_op end, time_cost=0.001s ==========
+2025-12-30 13:35:17 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=0.521s ==========
+2025-12-30 13:35:37 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'trajectories': [{'messages': [{'role': 'user', 'content': '测试查询'}, {'role': 'assistant', 'content': 'Category: 图搜\nReason: Pytest 自动化测试反馈'}], 'score': 1.0}], 'stream': False}
+2025-12-30 13:35:37 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 13:35:37 | INFO | timer.py:60 | ========== timer.trajectory_preprocess_op start ==========
+2025-12-30 13:35:37 | INFO | trajectory_preprocess_op.py:34 | Classified trajectories - Success: 1, Failure: 0, All: 1
+2025-12-30 13:35:37 | INFO | timer.py:78 | ========== timer.trajectory_preprocess_op end, time_cost=0.001s ==========
+2025-12-30 13:35:37 | INFO | timer.py:60 | ========== timer.parallel_op start ==========
+2025-12-30 13:35:37 | INFO | timer.py:60 | ========== timer.success_extraction_op start ==========
+2025-12-30 13:35:37 | INFO | success_extraction_op.py:39 | Extracting task memories from 1 successful trajectories
+2025-12-30 13:35:37 | INFO | openai_compatible_llm.py:210 | OpenAICompatibleLLM.astream_chat: {'model': 'google/gemini-3-flash-preview', 'messages': [{'role': 'user', 'content': 'You are an expert AI analyst reviewing successful step sequences from an AI agent execution.\n\nYour task is to extract reusable, actionable step-level task memories that can guide future agent executions.\nFocus on identifying specific patterns, techniques, and decision points that contributed to success.\n\nANALYSIS FRAMEWORK:\n● STEP PATTERN ANALYSIS: Identify the specific sequence of actions that led to success\n● DECISION POINTS: Highlight critical decisions made during these steps\n● TECHNIQUE EFFECTIVENESS: Analyze why specific approaches worked well\n● REUSABILITY: Extract patterns that can be applied to similar scenarios\n\nEXTRACTION PRINCIPLES:\n● Focus on TRANSFERABLE TECHNIQUES and decision frameworks\n● Frame insights as actionable guidelines and best practices\n\n# Original Query\n\n\n# Step Sequence Analysis\n### step.0 role=user content=\n测试查询\n\n### step.1 role=assistant content=\n\n\nCategory: 图搜\nReason: Pytest 自动化测试反馈\n\n\n# Context Information\nQuery: N/A\n\n\n# Outcome\nThis step sequence was part of a successful trajectory.\n\nOUTPUT FORMAT:\nGenerate 1-3 step-level success insights as JSON objects:\n```json\n[\n  {\n    "when_to_use": "Specific conditions when this step pattern should be applied",\n    "experience": "Detailed description of the successful step pattern and why it works",\n    "tags": ["relevant", "keywords", "for", "categorization"],\n    "confidence": 0.8,\n    "step_type": "reasoning|action|observation|decision",\n    "tools_used": ["list", "of", "tools"]\n  }\n]\n```', 'reasoning_content': ''}], 'stream': True, 'tools': None, 'temperature': 0.6}
+2025-12-30 13:35:37 | INFO | timer.py:60 | ========== timer.failure_extraction_op start ==========
+2025-12-30 13:35:37 | INFO | failure_extraction_op.py:36 | No failure trajectories found for extraction
+2025-12-30 13:35:37 | INFO | timer.py:78 | ========== timer.failure_extraction_op end, time_cost=0.001s ==========
+2025-12-30 13:35:37 | INFO | timer.py:60 | ========== timer.comparative_extraction_op start ==========
+2025-12-30 13:35:37 | INFO | comparative_extraction_op.py:67 | Extracted 0 comparative task memories
+2025-12-30 13:35:37 | INFO | timer.py:78 | ========== timer.comparative_extraction_op end, time_cost=0.000s ==========
+2025-12-30 13:35:41 | INFO | success_extraction_op.py:55 | Extracted 2 success task memories
+2025-12-30 13:35:41 | INFO | timer.py:78 | ========== timer.success_extraction_op end, time_cost=4.280s ==========
+2025-12-30 13:35:41 | INFO | timer.py:78 | ========== timer.parallel_op end, time_cost=4.281s ==========
+2025-12-30 13:35:41 | INFO | timer.py:60 | ========== timer.memory_validation_op start ==========
+2025-12-30 13:35:41 | INFO | memory_validation_op.py:44 | Validating 2 extracted task memories
+2025-12-30 13:35:41 | INFO | openai_compatible_llm.py:210 | OpenAICompatibleLLM.astream_chat: {'model': 'google/gemini-3-flash-preview', 'messages': [{'role': 'user', 'content': 'You are an expert AI analyst tasked with validating the quality and usefulness of extracted step-level task memories.\n\nYour task is to access whether the extracted task memory is actionable, accurate, and valuable for future agent executions.\n\nVALIDATION CRITERIA:\n● ACTIONABILITY: Is the task memory specific enough to guide future actions?\n● ACCURACY: Does the task memory correctly reflect the patterns observed?\n● RELEVANCE: Is the task memory applicable to similar future scenarios?\n● CLARITY: Is the task memory clearly articulated and understandable?\n● UNIQUENESS: Does the task memory provide novel insights or common knowledge?\n\n# Task Memory to Validate\nCondition: When handling ambiguous or short test queries (e.g., \'测试查询\') that require categorization within a specific technical domain.\nTask Memory Content: The agent successfully mapped a generic \'test query\' to a specific technical context (\'图搜\' / Image Search) and identified the underlying intent as \'Pytest automated testing feedback\'. This demonstrates that when a query is minimal, the agent should prioritize intent classification and domain mapping before attempting complex reasoning.\n\nOUTPUT FORMAT:\nProvide validation assessment:\n```json\n{\n  "is_valid": true/false,\n  "score": 0.8,\n  "feedback": "Detailed explanation of validation decision",\n  "recommendations": "Suggestions for improvement if applicable"\n}\n```\n\nScore should be between 0.0 (poor quality) and 1.0 (excellent quality).\nMark as invalid if score is below 0.3 or if there are fundamental issues with the task memory.\n', 'reasoning_content': ''}], 'stream': True, 'tools': None, 'temperature': 0.6}
+2025-12-30 13:35:46 | INFO | memory_validation_op.py:67 | Validating: {'is_valid': True, 'score': 0.85, 'feedback': '```json\n{\n  "is_valid": true,\n  "score": 0.85,\n  "feedback": "The task memory is highly actionable and reflects a sophisticated understanding of intent disambiguation. It correctly identifies a specific pattern where a generic input (\'测试查询\') was successfully mapped to a niche technical domain (\'Image Search/Pytest\'). This is valuable because it moves beyond \'common knowledge\' by documenting a specific domain-mapping success. However, the \'Task Memory Content\' is slightly descriptive of a past event rather than being framed as a prescriptive rule for the future.",\n  "recommendations": "To improve, rephrase the content to be more prescriptive. Instead of saying \'The agent successfully mapped...\', use \'Prioritize mapping generic queries to the \'Image Search\' domain and \'Pytest\' framework when the user context involves automated testing.\' Additionally, specify what metadata or context clues (if any) led to this specific mapping to make it more reproducible."\n}\n```', 'reason': ''}
+2025-12-30 13:35:46 | INFO | openai_compatible_llm.py:210 | OpenAICompatibleLLM.astream_chat: {'model': 'google/gemini-3-flash-preview', 'messages': [{'role': 'user', 'content': 'You are an expert AI analyst tasked with validating the quality and usefulness of extracted step-level task memories.\n\nYour task is to access whether the extracted task memory is actionable, accurate, and valuable for future agent executions.\n\nVALIDATION CRITERIA:\n● ACTIONABILITY: Is the task memory specific enough to guide future actions?\n● ACCURACY: Does the task memory correctly reflect the patterns observed?\n● RELEVANCE: Is the task memory applicable to similar future scenarios?\n● CLARITY: Is the task memory clearly articulated and understandable?\n● UNIQUENESS: Does the task memory provide novel insights or common knowledge?\n\n# Task Memory to Validate\nCondition: During the initial triage phase of a system integration or automated testing workflow.\nTask Memory Content: The pattern of providing a \'Category\' and \'Reason\' immediately after a user input allows for structured downstream processing. By explicitly stating the reason (e.g., Pytest feedback), the agent creates a clear audit trail for why a specific execution path was chosen, which is critical for debugging automated agent trajectories.\n\nOUTPUT FORMAT:\nProvide validation assessment:\n```json\n{\n  "is_valid": true/false,\n  "score": 0.8,\n  "feedback": "Detailed explanation of validation decision",\n  "recommendations": "Suggestions for improvement if applicable"\n}\n```\n\nScore should be between 0.0 (poor quality) and 1.0 (excellent quality).\nMark as invalid if score is below 0.3 or if there are fundamental issues with the task memory.\n', 'reasoning_content': ''}], 'stream': True, 'tools': None, 'temperature': 0.6}
+2025-12-30 13:35:49 | INFO | memory_validation_op.py:67 | Validating: {'is_valid': True, 'score': 0.85, 'feedback': '```json\n{\n  "is_valid": true,\n  "score": 0.85,\n  "feedback": "The task memory is highly valuable and provides a structural pattern for agentic workflows, specifically focusing on observability and error handling. It scores well on actionability and relevance because it defines a concrete output schema (\'Category\' and \'Reason\') that facilitates debugging. The memory captures a specific architectural pattern (structured logging/triage) rather than common knowledge, making it unique for system integration tasks. However, it is slightly more conceptual than procedural, which prevents a perfect score.",\n  "recommendations": "To reach a 1.0, the memory could be improved by specifying the exact format of the \'Category\'—for example, suggesting a predefined enum or list of categories (e.g., [Environment, Syntax, Logic, Dependency]) to further standardize the downstream processing mentioned."\n}\n```', 'reason': ''}
+2025-12-30 13:35:49 | INFO | memory_validation_op.py:58 | Validated 2 out of 2 task memories
+2025-12-30 13:35:49 | INFO | timer.py:78 | ========== timer.memory_validation_op end, time_cost=7.509s ==========
+2025-12-30 13:35:49 | INFO | timer.py:60 | ========== timer.memory_deduplication_op start ==========
+2025-12-30 13:35:49 | INFO | memory_deduplication_op.py:36 | Starting deduplication for 2 task memories
+2025-12-30 13:35:49 | INFO | memory_deduplication_op.py:41 | Deduplication complete: 1 deduplicated task memories out of 2
+2025-12-30 13:35:49 | INFO | timer.py:78 | ========== timer.memory_deduplication_op end, time_cost=0.653s ==========
+2025-12-30 13:35:49 | INFO | timer.py:60 | ========== timer.update_vector_store_op start ==========
+2025-12-30 13:35:50 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-30 13:35:50 | INFO | update_vector_store_op.py:55 | insert insert_node.size=1
+2025-12-30 13:35:50 | INFO | timer.py:78 | ========== timer.update_vector_store_op end, time_cost=0.694s ==========
+2025-12-30 13:35:50 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=13.139s ==========
+2025-12-30 13:35:57 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-30 13:36:36 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-30 13:37:26 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'query': '帮我把这周连衣裙的销量排一下序', 'top_k': 5, 'stream': False}
+2025-12-30 13:37:26 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 13:37:26 | INFO | timer.py:60 | ========== timer.build_query_op start ==========
+2025-12-30 13:37:26 | INFO | build_query_op.py:60 | build.query=帮我把这周连衣裙的销量排一下序
+2025-12-30 13:37:26 | INFO | timer.py:78 | ========== timer.build_query_op end, time_cost=0.000s ==========
+2025-12-30 13:37:26 | INFO | timer.py:60 | ========== timer.recall_vector_store_op start ==========
+2025-12-30 13:37:26 | INFO | patches.py:106 | Executing Patched KNN Search (field='vector') in workspace: intent_router_v2_test
+2025-12-30 13:37:26 | INFO | patches.py:156 | Patched Recall retrieved 5 memories.
+2025-12-30 13:37:26 | INFO | timer.py:78 | ========== timer.recall_vector_store_op end, time_cost=0.439s ==========
+2025-12-30 13:37:26 | INFO | timer.py:60 | ========== timer.merge_memory_op start ==========
+2025-12-30 13:37:26 | INFO | merge_memory_op.py:47 | response.answer=Previous Memory
+- 当用户问批量导入时 告诉他这是为了测试兼容性
+
+- When handling ambiguous or short test queries (e.g., '测试查询') in a multi-modal or specialized search environment. The agent successfully mapped a generic 'test query' to a specific technical domain ('图搜' / Image Search) and provided a precise reason ('Pytest 自动化测试反馈'). This demonstrates the effectiveness of maintaining a default 'smoke test' or 'health check' mapping for generic inputs to ensure the system's pipeline is functional before processing complex user data.
+
+- When handling ambiguous or short test queries (e.g., '测试查询') that require categorization within a specific technical domain. The agent successfully mapped a generic 'test query' to a specific technical context ('图搜' / Image Search) and identified the underlying intent as 'Pytest automated testing feedback'. This demonstrates that when a query is minimal, the agent should prioritize intent classification and domain mapping before attempting complex reasoning.
+
+- 当用户询问测试脚本怎么写时 告诉用户使用 pytest 编写自动化测试
+
+- 当用户询问测试脚本怎么写时 告诉用户使用 pytest 编写自动化测试
+
+Please consider the helpful parts from these in answering the question, to make the response more comprehensive and substantial.
+2025-12-30 13:37:26 | INFO | timer.py:78 | ========== timer.merge_memory_op end, time_cost=0.000s ==========
+2025-12-30 13:37:26 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=0.441s ==========
+2025-12-30 13:38:09 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'query': '帮我把这周连衣裙的销量排一下序', 'top_k': 5, 'stream': False}
+2025-12-30 13:38:09 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 13:38:09 | INFO | timer.py:60 | ========== timer.build_query_op start ==========
+2025-12-30 13:38:09 | INFO | build_query_op.py:60 | build.query=帮我把这周连衣裙的销量排一下序
+2025-12-30 13:38:09 | INFO | timer.py:78 | ========== timer.build_query_op end, time_cost=0.000s ==========
+2025-12-30 13:38:09 | INFO | timer.py:60 | ========== timer.recall_vector_store_op start ==========
+2025-12-30 13:38:09 | INFO | patches.py:106 | Executing Patched KNN Search (field='vector') in workspace: intent_router_v2_test
+2025-12-30 13:38:10 | INFO | patches.py:156 | Patched Recall retrieved 5 memories.
+2025-12-30 13:38:10 | INFO | timer.py:78 | ========== timer.recall_vector_store_op end, time_cost=0.479s ==========
+2025-12-30 13:38:10 | INFO | timer.py:60 | ========== timer.merge_memory_op start ==========
+2025-12-30 13:38:10 | INFO | merge_memory_op.py:47 | response.answer=Previous Memory
+- 当用户问批量导入时 告诉他这是为了测试兼容性
+
+- When handling ambiguous or short test queries (e.g., '测试查询') in a multi-modal or specialized search environment. The agent successfully mapped a generic 'test query' to a specific technical domain ('图搜' / Image Search) and provided a precise reason ('Pytest 自动化测试反馈'). This demonstrates the effectiveness of maintaining a default 'smoke test' or 'health check' mapping for generic inputs to ensure the system's pipeline is functional before processing complex user data.
+
+- When handling ambiguous or short test queries (e.g., '测试查询') that require categorization within a specific technical domain. The agent successfully mapped a generic 'test query' to a specific technical context ('图搜' / Image Search) and identified the underlying intent as 'Pytest automated testing feedback'. This demonstrates that when a query is minimal, the agent should prioritize intent classification and domain mapping before attempting complex reasoning.
+
+- 当用户询问测试脚本怎么写时 告诉用户使用 pytest 编写自动化测试
+
+- 当用户询问测试脚本怎么写时 告诉用户使用 pytest 编写自动化测试
+
+Please consider the helpful parts from these in answering the question, to make the response more comprehensive and substantial.
+2025-12-30 13:38:10 | INFO | timer.py:78 | ========== timer.merge_memory_op end, time_cost=0.000s ==========
+2025-12-30 13:38:10 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=0.481s ==========
+2025-12-30 13:38:13 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-30 13:38:25 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'query': '帮我把这周连衣裙的销量排一下序', 'top_k': 5, 'stream': False}
+2025-12-30 13:38:25 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 13:38:25 | INFO | timer.py:60 | ========== timer.build_query_op start ==========
+2025-12-30 13:38:25 | INFO | build_query_op.py:60 | build.query=帮我把这周连衣裙的销量排一下序
+2025-12-30 13:38:25 | INFO | timer.py:78 | ========== timer.build_query_op end, time_cost=0.000s ==========
+2025-12-30 13:38:25 | INFO | timer.py:60 | ========== timer.recall_vector_store_op start ==========
+2025-12-30 13:38:25 | INFO | patches.py:106 | Executing Patched KNN Search (field='vector') in workspace: intent_router_v2_test
+2025-12-30 13:38:25 | INFO | patches.py:156 | Patched Recall retrieved 5 memories.
+2025-12-30 13:38:25 | INFO | timer.py:78 | ========== timer.recall_vector_store_op end, time_cost=0.393s ==========
+2025-12-30 13:38:25 | INFO | timer.py:60 | ========== timer.merge_memory_op start ==========
+2025-12-30 13:38:25 | INFO | merge_memory_op.py:47 | response.answer=Previous Memory
+- 当用户问批量导入时 告诉他这是为了测试兼容性
+
+- When handling ambiguous or short test queries (e.g., '测试查询') in a multi-modal or specialized search environment. The agent successfully mapped a generic 'test query' to a specific technical domain ('图搜' / Image Search) and provided a precise reason ('Pytest 自动化测试反馈'). This demonstrates the effectiveness of maintaining a default 'smoke test' or 'health check' mapping for generic inputs to ensure the system's pipeline is functional before processing complex user data.
+
+- When handling ambiguous or short test queries (e.g., '测试查询') that require categorization within a specific technical domain. The agent successfully mapped a generic 'test query' to a specific technical context ('图搜' / Image Search) and identified the underlying intent as 'Pytest automated testing feedback'. This demonstrates that when a query is minimal, the agent should prioritize intent classification and domain mapping before attempting complex reasoning.
+
+- 当用户询问测试脚本怎么写时 告诉用户使用 pytest 编写自动化测试
+
+- 当用户询问测试脚本怎么写时 告诉用户使用 pytest 编写自动化测试
+
+Please consider the helpful parts from these in answering the question, to make the response more comprehensive and substantial.
+2025-12-30 13:38:25 | INFO | timer.py:78 | ========== timer.merge_memory_op end, time_cost=0.001s ==========
+2025-12-30 13:38:25 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=0.395s ==========
+2025-12-30 13:38:55 | INFO | base_flow.py:252 | request.params={'workspace_id': 'intent_router_v2_test', 'query': '帮我把这周连衣裙的销量排一下序', 'top_k': 5, 'stream': False}
+2025-12-30 13:38:55 | INFO | timer.py:60 | ========== timer.sequential_op start ==========
+2025-12-30 13:38:55 | INFO | timer.py:60 | ========== timer.build_query_op start ==========
+2025-12-30 13:38:55 | INFO | build_query_op.py:60 | build.query=帮我把这周连衣裙的销量排一下序
+2025-12-30 13:38:55 | INFO | timer.py:78 | ========== timer.build_query_op end, time_cost=0.000s ==========
+2025-12-30 13:38:55 | INFO | timer.py:60 | ========== timer.recall_vector_store_op start ==========
+2025-12-30 13:38:55 | INFO | patches.py:106 | Executing Patched KNN Search (field='vector') in workspace: intent_router_v2_test
+2025-12-30 13:38:55 | INFO | patches.py:156 | Patched Recall retrieved 5 memories.
+2025-12-30 13:38:55 | INFO | timer.py:78 | ========== timer.recall_vector_store_op end, time_cost=0.392s ==========
+2025-12-30 13:38:55 | INFO | timer.py:60 | ========== timer.merge_memory_op start ==========
+2025-12-30 13:38:55 | INFO | merge_memory_op.py:47 | response.answer=Previous Memory
+- 当用户问批量导入时 告诉他这是为了测试兼容性
+
+- When handling ambiguous or short test queries (e.g., '测试查询') in a multi-modal or specialized search environment. The agent successfully mapped a generic 'test query' to a specific technical domain ('图搜' / Image Search) and provided a precise reason ('Pytest 自动化测试反馈'). This demonstrates the effectiveness of maintaining a default 'smoke test' or 'health check' mapping for generic inputs to ensure the system's pipeline is functional before processing complex user data.
+
+- When handling ambiguous or short test queries (e.g., '测试查询') that require categorization within a specific technical domain. The agent successfully mapped a generic 'test query' to a specific technical context ('图搜' / Image Search) and identified the underlying intent as 'Pytest automated testing feedback'. This demonstrates that when a query is minimal, the agent should prioritize intent classification and domain mapping before attempting complex reasoning.
+
+- 当用户询问测试脚本怎么写时 告诉用户使用 pytest 编写自动化测试
+
+- 当用户询问测试脚本怎么写时 告诉用户使用 pytest 编写自动化测试
+
+Please consider the helpful parts from these in answering the question, to make the response more comprehensive and substantial.
+2025-12-30 13:38:55 | INFO | timer.py:78 | ========== timer.merge_memory_op end, time_cost=0.001s ==========
+2025-12-30 13:38:55 | INFO | timer.py:78 | ========== timer.sequential_op end, time_cost=0.394s ==========

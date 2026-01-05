@@ -1,0 +1,5 @@
+2025-12-31 14:55:18 | INFO | es_vector_store.py:63 | Elasticsearch client initialized with hosts=['http://zhixiaoyi-agent-server-yd5:52X5UTfQgIkBYq6q@zhixiaoyi-agent-server-yd5.private.cn-hangzhou.es-serverless.aliyuncs.com:9200'] basic_auth=None
+2025-12-31 14:55:20 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-31 14:55:21 | ERROR | patches.py:100 | ⚠️ [Patch] kNN search failed: "VectorNode" object has no field "score"
+2025-12-31 14:57:08 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-31 14:57:09 | ERROR | patches.py:100 | ⚠️ [Patch] kNN search failed: "VectorNode" object has no field "score"

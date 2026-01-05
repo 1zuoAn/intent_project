@@ -1,0 +1,4 @@
+2025-12-31 15:15:35 | INFO | es_vector_store.py:63 | Elasticsearch client initialized with hosts=['http://zhixiaoyi-agent-server-yd5:52X5UTfQgIkBYq6q@zhixiaoyi-agent-server-yd5.private.cn-hangzhou.es-serverless.aliyuncs.com:9200'] basic_auth=None
+2025-12-31 15:15:37 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-31 15:17:59 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
+2025-12-31 15:18:47 | INFO | es_vector_store.py:487 | async insert docs.size=1 status=1 error=[]
