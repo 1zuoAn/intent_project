@@ -1,2 +1,0 @@
-reme-ai
-elasticsearch==8.14.0
