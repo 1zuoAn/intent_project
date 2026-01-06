@@ -1,0 +1,1 @@
+2025-12-30 11:15:56 | INFO | es_vector_store.py:63 | Elasticsearch client initialized with hosts=['http://zhixiaoyi-agent-server-yd5:52X5UTfQgIkBYq6q@zhixiaoyi-agent-server-yd5.private.cn-hangzhou.es-serverless.aliyuncs.com:9200'] basic_auth=None
